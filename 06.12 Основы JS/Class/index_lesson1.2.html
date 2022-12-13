@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1"></p>
+
+    <script>
+        //методы взаимодействия
+        let answer= confirm("You are admin?") //метод выбора
+        console.log(answer);
+
+        let message = prompt("Write message:");
+        // console.log("you write",message);
+
+        let result = `you write,${message}`
+
+        alert(result);
+
+        id1.innerHTML = result; 
+
+        // Устаревший метод взаимодействия прочитать)))
+        // document.write("<p> Любой Текст </p>");
+
+        // добавление стилей через JS
+        id1.style.textAlign = "center";
+        id1.style.backgroundColor = "brown"
+        
+
+    </script>
+</body>
+</html>
