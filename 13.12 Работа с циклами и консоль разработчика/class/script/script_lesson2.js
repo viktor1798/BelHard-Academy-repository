@@ -15,19 +15,27 @@
 //     alert(i++);
 // }
 
-for (i = 1; i <= 11; i++){
-    box.innerHTML += `<img src="images/${i}.jpg">`;
-}
+// for (i = 1; i <= 11; i++){
+//     box.innerHTML += `<img src="images/${i}.jpg">`;
+// }
 
 
-{let i = 1;
+// {let i = 1;
 
-while(i<=10){
-    box1.innerHTML += `<img src="images/${i}.png">`;
-    i++;
-}}
+// while(i<=10){
+//     box1.innerHTML += `<img src="images/${i}.png">`;
+//     i++;
+// }}
 
 
-for(let w = 50 ; w <= 1000; w+=50){
-    box2.innerHTML += `<img id="idimg" src="images/minsk.jpg" style="width: ${w}px; alt="" ">`
-}
+// for(let w = 50 ; w <= 1000; w+=50){
+//     box2.innerHTML += `<img id="idimg" src="images/minsk.jpg" style="width: ${w}px; alt="" ">`
+// }
+
+
+let n = 100;
+
+do{
+    n-=5;
+    idword.innerHTML += n + "  ";
+}while(n>=1)
