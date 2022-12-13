@@ -36,6 +36,16 @@
 let n = 100;
 
 do{
-    n-=5;
     idword.innerHTML += n + "  ";
+    n-=5;
 }while(n>=1)
+
+let a = 2+2;
+
+if (a == 4){
+    alert('Norm');
+}else if(a==3){
+    alert('min')
+}else if(a==5){
+    alert("max")
+}else alert("null")
