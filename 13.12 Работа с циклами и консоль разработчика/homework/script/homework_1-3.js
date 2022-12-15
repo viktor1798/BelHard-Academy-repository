@@ -17,10 +17,17 @@ if(password==''||password == null){
 
 //2
 
-for(i=2; i<=10;i++){
+for(let i=2; i<=10;i++){
     if (i%2 == 0){
         idword1.innerHTML += i + " ";
     }
 }
 
+//3
 
+{let a=0;
+
+while(a<3){
+    a++;
+    idword2.innerHTML += a + " ";
+}}
