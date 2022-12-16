@@ -24,11 +24,22 @@
 
 // возврат значения
 
+// function myPow(a){
+//     let z = a*a;
+//     return z
+// }
+
+// let y = myPow(5)+ myPow(8);
+
+// alert(y)
+
+
+function func1(){
+    let n = number.value;
+    //alert(myPow(n))
+    number.value= myPow(n)
+}
 function myPow(a){
     let z = a*a;
-    return z
+    return z;
 }
-
-let y = myPow(5)+ myPow(8);
-
-alert(y)
