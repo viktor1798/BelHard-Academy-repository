@@ -14,10 +14,21 @@
 
 // sayHi("Vasya","Petya","Masha");
 
-function sayHi(gd,name){
-    alert(gd + name);
+// function sayHi(gd,name){
+//     alert(gd + name);
+// }
+
+// sayHi("Hi ","Vasya");
+// sayHi("bye ","Petya");
+// sayHi("good day ","Masha");
+
+// возврат значения
+
+function myPow(a){
+    let z = a*a;
+    return z
 }
 
-sayHi("Hi ","Vasya");
-sayHi("bye ","Petya");
-sayHi("good day ","Masha");
+let y = myPow(5)+ myPow(8);
+
+alert(y)
