@@ -33,12 +33,12 @@
 
 // alert(y)
 
-
-function func1(){
-    let n = number.value;
-    //alert(myPow(n))
-    number.value= myPow(n)
-}
+// вычисление через атрибуты
+// function func1(){
+//     let n = number.value;
+//     //alert(myPow(n))
+//     number.value= myPow(n)
+// }
 function myPow(a){
     let z = a*a;
     return z;
