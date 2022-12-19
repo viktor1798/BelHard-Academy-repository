@@ -39,6 +39,8 @@
 //     //alert(myPow(n))
 //     number.value= myPow(n)
 // }
+
+
 function myPow(a){
     let z = a*a;
     return z;
