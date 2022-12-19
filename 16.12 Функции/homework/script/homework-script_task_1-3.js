@@ -46,7 +46,7 @@
 
 
 
-//3 
+//3.1
 
 function equationTwo(x,y){
     let a = Math.pow(Math.cos((4*x)),2)- (1+Math.cos(4*y)/2);
@@ -60,6 +60,21 @@ function equationTwo(x,y){
     return alert(r);
 }
 
+equationTwo(0.8,-3.75);
+
+//3.2
+
+function equationThree(a,b){
+    let x = (Math.sqrt(2.3 + Math.pow(a,2))/Math.log(Math.pow(b,3)))+8.77;
+    let y = Math.asin(Math.pow(a,2)/Math.pow(b,3))/x;
+   
+    let k = (x<Math.sqrt(Math.pow(y,5))) ? 2*Math.pow(x,2)-3*y-19*Math.pow(y,2):Math.pow(x,2)-6*Math.pow(y,2);
+   
+    return alert(k);
+}
 
 
-equationTwo(0.8,-3.75)
+
+
+
+equationThree(7,9);

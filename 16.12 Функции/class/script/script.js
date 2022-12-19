@@ -33,5 +33,5 @@ b = Math.acos(k)/a;
 if(a < Math.pow(b,3) ){
     w = Math.sqrt(a+1);
 }else w = Math.sqrt(a+2);
-
+    
 console.log(w);
