@@ -34,20 +34,26 @@
 //switchOperator(num1,num2);
 
 //2
+
+//оформить в виде фунцкии
+
 let divCount = +prompt("Кол-во div")
 let imgCount = +prompt("Кол-во img")
 
-let count = 1;
 
 let myImage;
 
 for(let i=1; i<=divCount; i++){
+    let count =1;
     myImage += "<div>"
         for(let j = 1; j<= imgCount; j++){
-            myImage += `<img src="images/${j}.jpg" alt="">`            
+            if(count>11)count=2;
+            myImage += `<img src="images/${count++}.jpg" alt="">`            
         }
     myImage +="</div>"
 }
+
+
 
 
 image.innerHTML = myImage;
@@ -62,33 +68,33 @@ image.innerHTML = myImage;
 
 //3.1
 
-function equationTwo(x,y){
-    let a = Math.pow(Math.cos((4*x)),2)- (1+Math.cos(4*y)/2);
-    let r;
-    if(a < Math.sin(Math.pow(y,2))){
-        r = Math.PI/4-x;
-    } else if(a>=Math.pow(Math.sin(y-1),2)){
-        r = Math.tan(x)+tan(Math.PI/4*x)
-    }
+// function equationTwo(x,y){
+//     let a = Math.pow(Math.cos((4*x)),2)- (1+Math.cos(4*y)/2);
+//     let r;
+//     if(a < Math.sin(Math.pow(y,2))){
+//         r = Math.PI/4-x;
+//     } else if(a>=Math.pow(Math.sin(y-1),2)){
+//         r = Math.tan(x)+tan(Math.PI/4*x)
+//     }
 
-    return alert(r);
-}
+//     return alert(r);
+// }
 
-equationTwo(0.8,-3.75);
+// equationTwo(0.8,-3.75);
 
-//3.2
+// //3.2
 
-function equationThree(a,b){
-    let x = (Math.sqrt(2.3 + Math.pow(a,2))/Math.log(Math.pow(b,3)))+8.77;
-    let y = Math.asin(Math.pow(a,2)/Math.pow(b,3))/x;
+// function equationThree(a,b){
+//     let x = (Math.sqrt(2.3 + Math.pow(a,2))/Math.log(Math.pow(b,3)))+8.77;
+//     let y = Math.asin(Math.pow(a,2)/Math.pow(b,3))/x;
    
-    let k = (x<Math.sqrt(Math.pow(y,5))) ? 2*Math.pow(x,2)-3*y-19*Math.pow(y,2):Math.pow(x,2)-6*Math.pow(y,2);
+//     let k = (x<Math.sqrt(Math.pow(y,5))) ? 2*Math.pow(x,2)-3*y-19*Math.pow(y,2):Math.pow(x,2)-6*Math.pow(y,2);
    
-    return alert(k);
-}
+//     return alert(k);
+// }
 
 
 
 
 
-equationThree(7,9);
+// equationThree(7,9);
