@@ -34,9 +34,23 @@
 //switchOperator(num1,num2);
 
 //2
+let divCount = +prompt("Кол-во div")
+let imgCount = +prompt("Кол-во img")
+
+let count = 1;
+
+let myImage;
+
+for(let i=1; i<=divCount; i++){
+    myImage += "<div>"
+        for(let j = 1; j<= imgCount; j++){
+            myImage += `<img src="images/${j}.jpg" alt="">`            
+        }
+    myImage +="</div>"
+}
 
 
-
+image.innerHTML = myImage;
 
 
 
