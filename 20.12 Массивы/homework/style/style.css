@@ -1,0 +1,33 @@
+#myMenu{
+    /* border: 1px solid darkblue; */
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+li{
+    
+
+}
+
+a{
+    padding: 10px;
+    background: #16a4c0;
+    color: #fff;
+    text-decoration: none;
+    margin: 2px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+a:hover{
+    background: #ff6524;
+
+}

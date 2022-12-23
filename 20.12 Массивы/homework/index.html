@@ -5,12 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* доработать */
+    </style>
 </head>
+<h1>Создать меню</h1>
 <body>
-    <div id="box">
-        
+    <form name="formMenu">
+        <p>
+            Пункты меню:
+            <input name="elemMenu"type="text" size="100" value="О главном, О компании, Новости">
+        </p>
+        <p>
+            Цвет текста:
+            <input name="fc"type="color" value="#ffffff">
+        </p>
+        <p>
+            Цвет фона
+            <input type="color" name="bc" value="#16a4c0">
+        </p>
+        <p>
+            Цвет наведения
+            <input type="color" name="hc" value="#ff6524">
+        </p>
+        <p>
+            <input type="button" value="Создать меню" name="myButton" onclick="createMenu()">
+        </p>
+    </form>
+
+    <div id="myMenu">
+        <!-- <ul>
+            <li> <a href="#">Пункты</a> </li>
+            <li> <a href="#">Пункты</a> </li>
+            <li> <a href="#">Пункты</a> </li>
+        </ul> -->
     </div>
 </body>
-<script src="script/script.js"></script>
-
+<script src="script/menu_task-3.js"></script>
+<link rel="stylesheet" href="style/style.css">
 </html>

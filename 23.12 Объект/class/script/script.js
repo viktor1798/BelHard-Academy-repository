@@ -77,11 +77,9 @@ let numbersArray = [1,2,3,4,5];
 let text = textItem1.innerHTML;
 
 let newTextArray = text.split(" ")
-console.log(newTextArray);
 newTextArray.splice(2,2, "крупный,","современый")
 
 let newtext = newTextArray.join(" ")
-// console.log(test);
 console.log(newtext)
 
 
