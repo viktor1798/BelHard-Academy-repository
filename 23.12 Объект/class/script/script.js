@@ -74,15 +74,16 @@ let numbersArray = [1,2,3,4,5];
 //     console.log(`${i}: ${element} массива ${arrFruit} `);  
 // });
 
-let text = "Минск - большой, чистый город!"
+let text = textItem1.innerHTML;
 
 let newTextArray = text.split(" ")
-newTextArray.splice(2,2, "крупный","современый")
+console.log(newTextArray);
+newTextArray.splice(2,2, "крупный,","современый")
 
 let newtext = newTextArray.join(" ")
 // console.log(test);
 console.log(newtext)
 
-textItem1.innerHTML = text;
+
 textItem2.innerHTML = newtext;
 
