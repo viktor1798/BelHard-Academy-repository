@@ -35,23 +35,23 @@
 // alert (index);
 // alert(max)
 
-function maxElArray(){
-    let d =[]
-    let max, index;
-    while (true){
-    let value = prompt("Введите число!:")
+// function maxElArray(){
+//     let d =[]
+//     let max, index;
+//     while (true){
+//     let value = prompt("Введите число!:")
     
-    if(value === null || value === "" || !isFinite(value)){
-        break;
-    }
+//     if(value === null || value === "" || !isFinite(value)){
+//         break;
+//     }
 
-       d.push(+value);
-    }
+//        d.push(+value);
+//     }
 
-    max = Math.max(...d);
-    index = d.indexOf(max);
+//     max = Math.max(...d);
+//     index = d.indexOf(max);
 
-    return `Число ${max} c индексом ${index}`    
-}
+//     return `Число ${max} c индексом ${index}`    
+// }
 
-alert(maxElArray());
+// alert(maxElArray());
