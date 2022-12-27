@@ -16,9 +16,20 @@ for (let i = 0; i < arrayMenu.length; i++) {
     myMenu.innerHTML += `
         <li> <a href="#">${arrayMenu[i]}</a> </li>    
     `
-    
 }
+
 
 myMenu.innerHTML = `<ul>${myMenu.innerHTML}</ul>`
 
+formMenu.myButton.value = "Изменть меню";
+
+newStyle.innerHTML = `
+a{
+    background:${bc};
+    color: ${fc};
+}
+a:hover{
+    background: ${hc};
+}
+`
 }

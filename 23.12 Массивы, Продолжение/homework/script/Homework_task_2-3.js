@@ -40,29 +40,29 @@
 //     return (a != 1) ? a * factorialPlusOne(z - 1) : 1;
 // }
 
-function factorialExpression(){
-    let m = +prompt("Введите число M")
-    let n = +prompt("Введите число N")
+// function factorialExpression(){
+//     let m = +prompt("Введите число M")
+//     let n = +prompt("Введите число N")
     
-    let c;
+//     let c;
     
-    function factorialM(x){
-        return (x != 1) ? x * factorialM(x - 1) : 1;
-    }
+//     function factorialM(x){
+//         return (x != 1) ? x * factorialM(x - 1) : 1;
+//     }
 
-    function factorialN(y){
-        return (y != 1) ? y * factorialN(y - 1) : 1;
-    }
+//     function factorialN(y){
+//         return (y != 1) ? y * factorialN(y - 1) : 1;
+//     }
 
-    function factorialPlusOne(z){
-        let a = z+1
-        return (a != 1) ? a * factorialPlusOne(z - 1) : 1;
-    }
+//     function factorialPlusOne(z){
+//         let a = z+1
+//         return (a != 1) ? a * factorialPlusOne(z - 1) : 1;
+//     }
 
-    c = (factorialM(m)+factorialN(n))/factorialPlusOne(m);
-    alert(c);
+//     c = (factorialM(m)+factorialN(n))/factorialPlusOne(m);
+//     alert(c);
 
     
-}
+// }
 
-factorialExpression();
+// factorialExpression();
