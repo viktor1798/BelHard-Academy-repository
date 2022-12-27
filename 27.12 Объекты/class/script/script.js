@@ -19,30 +19,46 @@
 
 
 
-//
 
-person={};
 
-person.age = 18;
-person.firstName = "Igor";
-console.log(person.firstName, person.age , person);
-delete person.age;
+// person={};
 
-//просмотро содержимого в Объекте person
-if ("firstName" in person){
-    console.log("существует");
-}else console.log("не существует");
+// person.age = 18;
+// person.firstName = "Igor";
+// console.log(person.firstName, person.age , person);
+// delete person.age;
 
-//доступ через квадратные скобки []
+// //просмотро содержимого в Объекте person
+// if ("firstName" in person){
+//     console.log("существует");
+// }else console.log("не существует");
 
-person["firstName"]="Petya";
+// //доступ через квадратные скобки []
 
-console.log(person["firstName"])
+// person["firstName"]="Petya";
 
-// доступ к свойству объекта через переменную
+// console.log(person["firstName"])
 
-person.age = 30;
+// // доступ к свойству объекта через переменную
 
-let key = "age";
+// person.age = 30;
 
-console.log(person[key]);
+// let key = "age";
+
+// console.log(person[key]);
+
+
+// перебор объекта
+
+let menu={
+    width:300,
+    heigth:200,
+    title:"Blabla",
+}
+
+for (let key in menu) {
+    alert(`${key}:${menu[key]}`);
+}
+
+// копия объекта (зависимая копия)
+
