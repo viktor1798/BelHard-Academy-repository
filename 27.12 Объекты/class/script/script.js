@@ -50,15 +50,41 @@
 
 // перебор объекта
 
-let menu={
-    width:300,
-    heigth:200,
-    title:"Blabla",
+// let menu={
+//     width:300,
+//     heigth:200,
+//     title:"Blabla",
+// }
+
+// for (let key in menu) {
+//     alert(`${key}:${menu[key]}`);
+// }
+
+// копия объекта (зависимая копия), передача по ссылке
+
+let user={
+    name:"Oleg",
 }
 
-for (let key in menu) {
-    alert(`${key}:${menu[key]}`);
+let admin = user;
+
+admin.name = "kolya";
+
+console.log(user.name)
+
+//независимая копия объекта (клонирование объекта)
+let newUser={
+    name:"Olya",
+    age:32,
+    heigth:165,
 }
 
-// копия объекта (зависимая копия)
+let clone ={}
 
+for (let key in newUser) {
+    clone[key]= newUser[key];
+}
+newUser.name = 'Grisha'
+clone.name = 'Senya'
+console.log(clone);
+console.log(newUser);
