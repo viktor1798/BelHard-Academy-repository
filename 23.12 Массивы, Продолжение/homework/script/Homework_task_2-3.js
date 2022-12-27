@@ -67,17 +67,17 @@
 
 // factorialExpression();
 
-let M=5,N=3, C;
+// let M=5,N=3, C;
 
-function f(x){
-    let result = 1;
+// function f(x){
+//     let result = 1;
     
-    for(let i=1;i<=x;i++){
-        result *=i;
-    }
+//     for(let i=1;i<=x;i++){
+//         result *=i;
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-C = (f(M)+f(N))/(f(M+1))
-alert(C);
+// C = (f(M)+f(N))/(f(M+1))
+// alert(C);

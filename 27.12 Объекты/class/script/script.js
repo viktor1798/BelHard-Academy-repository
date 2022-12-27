@@ -89,3 +89,38 @@
 // console.log(clone);
 // console.log(newUser);
 
+
+
+
+
+//повторение методов Math
+
+//Рандомные велечины
+
+//1 step (случайное от 0 до 1)
+
+let r=Math.random()
+console.log(r);
+
+//2 step (случайное до макс числа)
+const MAX= 5;
+
+let result = MAX *r;
+console.log(result);
+
+//3 step (округление, метод round)
+
+let result1 = Math.round(result);
+console.log(result1);
+
+//округление с методом floor
+
+let result2=Math.floor(result); //округление в меньшую сторону
+
+console.log(result2)
+
+//округление в большую сторону с методом ceil
+
+let result3 = Math.ceil(result);
+
+console.log(result3);
