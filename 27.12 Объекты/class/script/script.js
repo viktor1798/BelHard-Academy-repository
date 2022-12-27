@@ -62,29 +62,30 @@
 
 // копия объекта (зависимая копия), передача по ссылке
 
-let user={
-    name:"Oleg",
-}
+// let user={
+//     name:"Oleg",
+// }
 
-let admin = user;
+// let admin = user;
 
-admin.name = "kolya";
+// admin.name = "kolya";
 
-console.log(user.name)
+// console.log(user.name)
 
-//независимая копия объекта (клонирование объекта)
-let newUser={
-    name:"Olya",
-    age:32,
-    heigth:165,
-}
+// //независимая копия объекта (клонирование объекта)
+// let newUser={
+//     name:"Olya",
+//     age:32,
+//     heigth:165,
+// }
 
-let clone ={}
+// let clone ={}
 
-for (let key in newUser) {
-    clone[key]= newUser[key];
-}
-newUser.name = 'Grisha'
-clone.name = 'Senya'
-console.log(clone);
-console.log(newUser);
+// for (let key in newUser) {
+//     clone[key]= newUser[key];
+// }
+// newUser.name = 'Grisha'
+// clone.name = 'Senya'
+// console.log(clone);
+// console.log(newUser);
+
