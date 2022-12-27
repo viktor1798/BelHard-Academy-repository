@@ -99,28 +99,35 @@
 
 //1 step (случайное от 0 до 1)
 
-let r=Math.random()
-console.log(r);
+// let r=Math.random()
+// console.log(r);
 
-//2 step (случайное до макс числа)
-const MAX= 5;
+// //2 step (случайное до макс числа)
+// const MAX= 5;
 
-let result = MAX *r;
-console.log(result);
+// let result = MAX *r;
+// console.log(result);
 
-//3 step (округление, метод round)
+// //3 step (округление, метод round)
 
-let result1 = Math.round(result);
-console.log(result1);
+// let result1 = Math.round(result);
+// console.log(result1);
 
-//округление с методом floor
+// //округление с методом floor
 
-let result2=Math.floor(result); //округление в меньшую сторону
+// let result2=Math.floor(result); //округление в меньшую сторону
 
-console.log(result2)
+// console.log(result2)
 
-//округление в большую сторону с методом ceil
+// //округление в большую сторону с методом ceil
 
-let result3 = Math.ceil(result);
+// let result3 = Math.ceil(result);
 
-console.log(result3);
+// console.log(result3);
+
+let cities = ["Pinsk", "Orsha", "Lepel", "Gorky", "Zhlobin"]
+const maxC = cities.length
+
+let r = Math.floor(Math.random()*maxC)
+
+console.log(cities[r])
