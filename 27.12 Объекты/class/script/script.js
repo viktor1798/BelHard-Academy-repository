@@ -125,9 +125,18 @@
 
 // console.log(result3);
 
-let cities = ["Pinsk", "Orsha", "Lepel", "Gorky", "Zhlobin"]
-const maxC = cities.length
+// let cities = ["Pinsk", "Orsha", "Lepel", "Gorky", "Zhlobin"]
+// const maxC = cities.length
 
-let r = Math.floor(Math.random()*maxC)
+// let r = Math.floor(Math.random()*maxC)
 
-console.log(cities[r])
+// console.log(cities[r])
+
+//случайный цвет
+
+let symbol = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
+let maxP = symbol.length;
+let r =Math.floor(Math.random()*maxP)
+let randomColor = `#${symbol[r]}${symbol[r]}${symbol[r]}${symbol[r]}${symbol[r]}${symbol[r]}`
+
+console.log(randomColor);
