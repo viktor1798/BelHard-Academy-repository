@@ -13,56 +13,70 @@ blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 
 table{border-collapse:collapse;border-spacing:0}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
 
+* {
+    font-family: 'Oswald', sans-serif;
+}
 
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+#cards {
+    width: 1000px;
+    height: 800px;
+    /* border: 1px solid magenta; */
+    margin: 0px auto;
 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-
-
-#main-body{
+.main-body{
     width: 300px;
     height: 675px;
     border: 2px solid black;
     margin: 0 auto;
+    
+    width: 300px;
+    height: 675px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
 }
-#body-img{
-    margin: 10px;
+.body-img{
+    margin: 10px 10px -130px 10px;
 }
-#title{
+.title{
+    margin-top: 80px;
     text-align: center;
 }
-#title_text{
-font-family: Oswald;
-font-size: 30px;
+.title_text{
+font-size: 25px;
 line-height: 27px;
 font-weight: 700;
 color: #616161;
 }
-
-#price{
+.body-img img:nth-child(2){
+    /* крутая замена position */
+    transform: translate(8%,-100px);
+}
+.body-img img:nth-child(3){
+    transform: translate(-15%,-280px);
+}
+.price{
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
-#current-price{
-    font-family: Oswald;
-    font-size: 30px;
-    line-height: 27px;
-    font-weight: 700;
-    color: #242323;
-    margin-right: 14px;
-}
-#sale{
-    font-family: Oswald;
-    font-size: 19px;
-    line-height: 27px;
-    font-weight: 700;
-    text-decoration: line-through;
-    color: #868282;
-    /* margin-top: 8px; */
-}
-#buy{
+
+.buy{
     font-family: Oswald;
     font-size: 40px;
     line-height: normal;
@@ -76,48 +90,36 @@ color: #616161;
 
 }
 
-
+.current-price{
+    font-size: 30px;
+    color: rgb(36, 35, 35);
+    font-weight: 500;
+}
+.sale{
+    font-size: 19px;
+    color: rgb(134, 130, 130);
+    text-decoration: line-through;
+}
 /* кнопка рейтинга */
-.rating-area {
-    padding-top: 10px;
-	overflow: hidden;
-	width: 134px;
-    height: 28px;
-	margin: 0 auto;
+.rating {
+    width: 280px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.rating-area:not(:checked) > input {
-	display: none;
+
+.material-icons{
+    color: #ff6000;
+    font-size: 1.8em;
+    cursor:pointer;
 }
-.rating-area:not(:checked) > label {
-	float: right;
-    margin: 0;
-	/* width: 42px; */
-	padding: 0;
-	cursor: pointer;
-	font-size: 32px;
-	line-height: 32px;
-	color: lightgrey;
-	text-shadow: 1px 1px #bbb;
-}
-.rating-area:not(:checked) > label:before {
-	content: '★';
-}
-.rating-area > input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px #c60;
-}
-.rating-area:not(:checked) > label:hover,
-.rating-area:not(:checked) > label:hover ~ label {
-	color: gold;
-}
-.rating-area > input:checked + label:hover,
-.rating-area > input:checked + label:hover ~ label,
-.rating-area > input:checked ~ label:hover,
-.rating-area > input:checked ~ label:hover ~ label,
-.rating-area > label:hover ~ input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px goldenrod;
-}
-.rate-area > label:active {
-	/* position: relative; */
+.buy-button{
+    cursor:pointer;
+    width: 280px;
+    height: 75px;
+    /* выравнивание по центру при помощи flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

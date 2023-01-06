@@ -76,17 +76,17 @@
 
 //массив объектов без имени элементов
 
-let arrObj = [
-    { f:"7.jpg",w:"500",h: "500",}, //0
-    { f:"8.jpg",w:"700",h: "700",}, //1
-     { f:"9.jpg",w:"900",h: "900",} //2
-]
-    for(let i = 0 ; i<arrObj.length;i++){
-        let f,w,h
-        f= arrObj[i].f;
-        w = arrObj[i].w;
-        h = arrObj[i].h
+// let arrObj = [
+//     { f:"7.jpg",w:"500",h: "500",}, //0
+//     { f:"8.jpg",w:"700",h: "700",}, //1
+//      { f:".jpg",w:"900",h: "900",} //2
+// ]
+//     for(let i = 0 ; i<arrObj.length;i++){
+//         let f,w,h
+//         f= arrObj[i].f;
+//         w = arrObj[i].w;
+//         h = arrObj[i].h
 
-        box.innerHTML += `<img src="images/${f}" alt="" style="width:${w}px; height:${h}px"></img>`
+//         box.innerHTML += `<img src="images/${f}" alt="" style="width:${w}px; height:${h}px"></img>`
 
-    }
+//     }
