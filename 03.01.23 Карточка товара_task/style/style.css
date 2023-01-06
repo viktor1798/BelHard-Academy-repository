@@ -1,25 +1,144 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
 
-html{height:100%}
+html {
+    height: 100%
+}
 
-body{line-height:1}
+body {
+    line-height: 1
+}
 
-ol,ul{list-style:none}
+ol,
+ul {
+    list-style: none
+}
 
-blockquote,q{quotes:none}
+blockquote,
+q {
+    quotes: none
+}
 
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
 
-table{border-collapse:collapse;border-spacing:0}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
 
 * {
     font-family: 'Oswald', sans-serif;
 }
 
-body{
+body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -35,12 +154,12 @@ body{
     align-items: center;
 }
 
-.main-body{
+.main-body {
     width: 300px;
     height: 675px;
     border: 2px solid black;
     margin: 0 auto;
-    
+
     width: 300px;
     height: 675px;
 
@@ -48,35 +167,47 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
-    
+
 }
-.body-img{
+
+.body-img {
     margin: 10px 10px -130px 10px;
 }
-.title{
+
+.title {
     margin-top: 80px;
     text-align: center;
 }
-.title_text{
-font-size: 25px;
-line-height: 27px;
-font-weight: 700;
-color: #616161;
+
+.title_text {
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #616161;
 }
-.body-img img:nth-child(2){
+
+.sale_img{
     /* крутая замена position */
-    transform: translate(8%,-100px);
+    transform: translate(8%, -100px);
 }
-.body-img img:nth-child(3){
-    transform: translate(-15%,-280px);
+
+
+
+.type {
+    transform: translate(-15%, -280px);
 }
-.price{
+
+.type-no-sale{
+    transform: translate(100%, -280px);
+}
+
+.price {
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
 
-.buy{
+.buy {
     font-family: Oswald;
     font-size: 40px;
     line-height: normal;
@@ -86,20 +217,22 @@ color: #616161;
     background-color: #ff9400;
     height: 66px;
     color: white;
-   margin: 10px 0 0 26px;
+    margin: 10px 0 0 26px;
 
 }
 
-.current-price{
+.current-price {
     font-size: 30px;
     color: rgb(36, 35, 35);
     font-weight: 500;
 }
-.sale{
+
+.sale {
     font-size: 19px;
     color: rgb(134, 130, 130);
     text-decoration: line-through;
 }
+
 /* кнопка рейтинга */
 .rating {
     width: 280px;
@@ -109,13 +242,14 @@ color: #616161;
     align-items: center;
 }
 
-.material-icons{
+.material-icons {
     color: #ff6000;
     font-size: 1.8em;
-    cursor:pointer;
+    cursor: pointer;
 }
-.buy-button{
-    cursor:pointer;
+
+.buy-button {
+    cursor: pointer;
     width: 280px;
     height: 75px;
     /* выравнивание по центру при помощи flex box */
