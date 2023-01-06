@@ -186,7 +186,7 @@ body {
     color: #616161;
 }
 
-.sale_img{
+.sale_img {
     /* крутая замена position */
     transform: translate(8%, -100px);
 }
@@ -197,7 +197,7 @@ body {
     transform: translate(-15%, -280px);
 }
 
-.type-no-sale{
+.type-no-sale {
     transform: translate(100%, -280px);
 }
 

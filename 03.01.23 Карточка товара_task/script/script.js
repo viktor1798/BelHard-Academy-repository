@@ -72,31 +72,33 @@ console.log(rang);
 
 
 
-let proverka ;
+let proverka;
 
-if(myCard.saleImage==true){
+if (myCard.saleImage == true) {
     proverka = myCard.sale;
-}else proverka = null;
+} else proverka = null;
 
 
 
-let divPrice=" ";
+let divPrice = " ";
 
-if(myCard.sale_price == 0){
-     divPrice =`<p class="current-price">${fullPrice}</p>`
-}else{ divPrice=`<p class="current-price">${salePrice}</p>
-                <p class="sale ">${fullPrice}</p>`}
+if (myCard.sale_price == 0) {
+    divPrice = `<p class="current-price">${fullPrice}</p>`
+} else {
+    divPrice = `<p class="current-price">${salePrice}</p>
+                <p class="sale ">${fullPrice}</p>`
+}
 
 
 let imgNoSale;
 
-if(!myCard.saleImage){
+if (!myCard.saleImage) {
     imgNoSale = `<img class ="type-no-sale" src="img/${myCard.type}" alt="">`
-}else imgNoSale =`<img class ="sale_img" src="img/${proverka}" alt="">
+} else imgNoSale = `<img class ="sale_img" src="img/${proverka}" alt="">
 <img class ="type" src="img/${myCard.type}" alt="">`
 
 
-let s =`<div class="main-body">
+let s = `<div class="main-body">
 <div class="body-img">
     <img src="img/${myCard.poster}" alt="">
     ${imgNoSale}
