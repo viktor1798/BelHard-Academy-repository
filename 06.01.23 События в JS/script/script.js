@@ -36,6 +36,32 @@
 // }
 
 
-function upperCase(){
-    text.value = text.value.toUpperCase();
+// function upperCase(){
+//     text.value = text.value.toUpperCase();
+// }
+
+function func1(){
+    alert("hi");
+    
 }
+
+function func2(){
+    alert("Hate")
+}
+
+function func3(){
+    elem1.innerHTML ="Pain"
+    
+}
+function func4(){
+    elem1.style = "color: red;"
+    
+}
+
+elem.addEventListener("click", func1);
+elem1.addEventListener("click", func2);
+
+
+
+elem1.addEventListener("mouseover", func3);
+elem1.addEventListener("mouseover", func4);
