@@ -28,9 +28,14 @@
 // }
 
 
-function textOn(){
-    id1.innerHTML = `Шаурма это хорошо`
-}
-function textOff(){
-    id1.innerHTML = ``
+// function textOn(){
+//     id1.innerHTML = `Шаурма это хорошо`
+// }
+// function textOff(){
+//     id1.innerHTML = ``
+// }
+
+
+function upperCase(){
+    text.value = text.value.toUpperCase();
 }
