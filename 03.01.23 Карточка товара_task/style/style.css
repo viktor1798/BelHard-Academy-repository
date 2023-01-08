@@ -138,20 +138,20 @@ table {
     font-family: 'Oswald', sans-serif;
 }
 
-body {
+/* body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-#cards {
+} */
+.cards{
     width: 1000px;
     height: 800px;
     /* border: 1px solid magenta; */
     margin: 0px auto;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
 }
 
 .main-body {

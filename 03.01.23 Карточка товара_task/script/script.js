@@ -12,6 +12,7 @@ let myCard = {
     button: "sloy_5_14.png",
 }
 
+
 // формат полной стоимость
 
 let fullPrice = `${myCard.price},00 ${myCard.currency}`;
@@ -72,11 +73,11 @@ console.log(rang);
 
 
 
-let proverka;
+let sale_icon;
 
 if (myCard.saleImage == true) {
-    proverka = myCard.sale;
-} else proverka = null;
+    sale_icon = myCard.sale;
+} else sale_icon = null;
 
 
 
@@ -94,7 +95,7 @@ let imgNoSale;
 
 if (!myCard.saleImage) {
     imgNoSale = `<img class ="type-no-sale" src="img/${myCard.type}" alt="">`
-} else imgNoSale = `<img class ="sale_img" src="img/${proverka}" alt="">
+} else imgNoSale = `<img class ="sale_img" src="img/${sale_icon}" alt="">
 <img class ="type" src="img/${myCard.type}" alt="">`
 
 
