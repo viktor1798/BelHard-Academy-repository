@@ -60,14 +60,3 @@
 //     }
 // }
 
-
-//querySelectorAll
-
-
-function change4(){
-    let myCSS = document.querySelectorAll("p:nth-child(even)")
-    let count =0;
-    for(let index of myCSS){
-        index.innerHTML = `sad ${count+=2}`;
-    }
-}
