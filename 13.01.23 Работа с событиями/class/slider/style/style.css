@@ -1,0 +1,35 @@
+section{
+    width: 550px;
+    height: 400px;
+    margin: 50px auto;
+
+    transition: filter 0.4s linear;
+
+    /* position: relative; */
+}
+.material-symbols-outlined{
+    font-size: 70px;
+ text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+}
+
+
+    
+#before{
+    transform: translateY(-250px);
+    color: azure;
+}
+
+#after{
+    transform: translate(468px,-326px);
+    color: azure;
+}
+
+section div{
+    width: 70px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+section:hover{
+    filter: brightness(80%);
+}
