@@ -34,8 +34,28 @@
 // images
 
 
-for(let i = 0; i<3;i++){
-    console.log(document.images[i].src);
-    console.log(document.links[i].href);
-    console.log(document.forms[i].name);
-}
+// for(let i = 0; i<3;i++){
+//     console.log(document.images[i].src);
+//     console.log(document.links[i].href);
+//     console.log(document.forms[i].name);
+// }
+
+
+box.innerHTML = `<p> Браузер: <br> ${navigator.appCodeName}<br>
+${navigator.appCodeName}<br>
+${navigator.appVersion}<br>
+</p>
+<p>
+Посетили адресов:
+<br>
+${history.length}
+<br>
+<p>
+Экран <br>
+${screen.width}
+<br>
+${screen.height}<br> ${screen.colorDepth}
+</p>
+</p>
+
+`
