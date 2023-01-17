@@ -41,21 +41,28 @@
 // }
 
 
-box.innerHTML = `<p> Браузер: <br> ${navigator.appCodeName}<br>
-${navigator.appCodeName}<br>
-${navigator.appVersion}<br>
-</p>
-<p>
-Посетили адресов:
-<br>
-${history.length}
-<br>
-<p>
-Экран <br>
-${screen.width}
-<br>
-${screen.height}<br> ${screen.colorDepth}
-</p>
-</p>
+// box.innerHTML = `<p> Браузер: <br> ${navigator.appCodeName}<br>
+// ${navigator.appCodeName}<br>
+// ${navigator.appVersion}<br>
+// </p>
+// <p>
+// Посетили адресов:
+// <br>
+// ${history.length}
+// <br>
+// <p>
+// Экран <br>
+// ${screen.width}
+// <br>
+// ${screen.height}<br> ${screen.colorDepth}
+// </p>
+// </p>
+//`
+
+box1.innerHTML=`<p> href: ${location.href}</p>
+<p> href: ${location.host}</p>
+<p> href: ${location.hash}</p>
+<p> href: ${location.pathname}</p>
+<p> href: ${location.search}</p>
 
 `
