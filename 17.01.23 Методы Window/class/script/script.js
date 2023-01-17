@@ -23,6 +23,19 @@
 // alert - является методом window;
 
 //открытие полноразмерного изображение
-function wind(){
-    window.open("window.html", null, "width: 1200px, ")
+// function wind(){
+//     window.open("window.html", null, "width: 1200px, ")
+// }
+
+// Поиск элементов по коллекции документов
+
+// links
+// forms
+// images
+
+
+for(let i = 0; i<3;i++){
+    console.log(document.images[i].src);
+    console.log(document.links[i].href);
+    console.log(document.forms[i].name);
 }
