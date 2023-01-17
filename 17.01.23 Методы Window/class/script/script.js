@@ -21,3 +21,8 @@
 // location
 
 // alert - является методом window;
+
+//открытие полноразмерного изображение
+function wind(){
+    window.open("window.html", null, "width: 1200px, ")
+}
