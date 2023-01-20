@@ -91,37 +91,71 @@
 
 //пример 1
 
-let newDivEl = document.createElement("div");
-newDivEl.innerHTML = "Hi";
-newDivEl.setAttribute("id","box")
-document.body.append(newDivEl);
+// let newDivEl = document.createElement("div");
+// newDivEl.innerHTML = "Hi";
+// newDivEl.setAttribute("id","box")
+// document.body.append(newDivEl);
 
-//пример 2
+// //пример 2
 
-let mySelector = document.createElement("section");
-mySelector.setAttribute("id","box1");
-mySelector.style = `
-    width:550px;
-    height:400px;
-    border:1px solid #000;
-    margin: 0 auto;
-`
-// mySelector.innerHTML = `<img src = "images/img1b.jpg"/>`;
+// let mySelector = document.createElement("section");
+// mySelector.setAttribute("id","box1");
+// mySelector.style = `
+//     width:550px;
+//     height:400px;
+//     border:1px solid #000;
+//     margin: 0 auto;
+// `
+// // mySelector.innerHTML = `<img src = "images/img1b.jpg"/>`;
 
-let myImg = document.createElement('img');
-myImg.setAttribute("src","images/img1b.jpg")
+// let myImg = document.createElement('img');
+// myImg.setAttribute("src","images/img1b.jpg")
 
-mySelector.append(myImg);
-
-
-document.body.append(mySelector);
+// mySelector.append(myImg);
 
 
-// myImg.remove();
-// newDivEl.remove();
-// mySelector.remove();
+// document.body.append(mySelector);
 
 
-setTimeout(()=> myImg.remove(),2000);
-setTimeout(()=>newDivEl.remove(),4000);
-setTimeout(()=>mySelector.remove(),6000);
+// // myImg.remove();
+// // newDivEl.remove();
+// // mySelector.remove();
+
+
+// setTimeout(()=> myImg.remove(),2000);
+// setTimeout(()=>newDivEl.remove(),4000);
+// setTimeout(()=>mySelector.remove(),6000);
+
+//cлайдер
+
+let newSlide = document.createElement('img');
+newSlide.setAttribute('id', 'slide2')
+newSlide.setAttribute('src', 'images/img2b.jpg');
+newSlide.style = `
+top:-404px;
+left: 552px;
+`;
+box.append(newSlide);
+
+let slide1 = document.getElementById('slide1');
+let slide2 = document.getElementById('slide2');
+
+let pos = 1;
+
+moveImg()
+
+function moveImg() {
+    const w = 555;
+    let step = 5;
+    
+    if (pos > w) {
+        clearTimeout(timerId);
+    }else{
+        slide1.style.right = `${pos}px`
+        slide2.style.left = `${-pos+w}px`
+        pos+=step;
+
+    }
+
+    timerId= setTimeout(moveImg,2-pos);
+}
