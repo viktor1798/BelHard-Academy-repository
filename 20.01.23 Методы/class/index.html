@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        div {
+            border: 1px solid blue;
+            padding: 3px;
+            width: 110px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #pic{
+            transition: 0.5s linear;
+        }
+
+        body{
+            animation: fadeIn 2s;
+
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100 {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="winter" id="id1" onmouseover="tab(this,'winter.jpg')">Зима</div>
+        <div class="spring" id="id2" onmouseover="tab(this,'spring.jpg')">Весна</div>
+        <div class="summer" id="id3" onmouseover="tab(this,'summer.jpg')">Лето</div>
+        <div class="autumn" id="id4" onmouseover="tab(this,'autumn.jpg')">Осень</div>
+    </section>
+    <section>
+        <img id="pic" src="images/winter.jpg" alt="">
+    </section>
+</body>
+<script src="script/script.js"></script>
+
+</html>

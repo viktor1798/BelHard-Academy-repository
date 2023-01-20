@@ -128,34 +128,34 @@
 
 //cлайдер
 
-let newSlide = document.createElement('img');
-newSlide.setAttribute('id', 'slide2')
-newSlide.setAttribute('src', 'images/img2b.jpg');
-newSlide.style = `
-top:-404px;
-left: 552px;
-`;
-box.append(newSlide);
+// let newSlide = document.createElement('img');
+// newSlide.setAttribute('id', 'slide2')
+// newSlide.setAttribute('src', 'images/img2b.jpg');
+// newSlide.style = `
+// top:-404px;
+// left: 552px;
+// `;
+// box.append(newSlide);
 
-let slide1 = document.getElementById('slide1');
-let slide2 = document.getElementById('slide2');
+// let slide1 = document.getElementById('slide1');
+// let slide2 = document.getElementById('slide2');
 
-let pos = 1;
+// let pos = 1;
 
-moveImg()
+// moveImg()
 
-function moveImg() {
-    const w = 555;
-    let step = 5;
+// function moveImg() {
+//     const w = 555;
+//     let step = 5;
     
-    if (pos > w) {
-        clearTimeout(timerId);
-    }else{
-        slide1.style.right = `${pos}px`
-        slide2.style.left = `${-pos+w}px`
-        pos+=step;
+//     if (pos > w) {
+//         clearTimeout(timerId);
+//     }else{
+//         slide1.style.right = `${pos}px`
+//         slide2.style.left = `${-pos+w}px`
+//         pos+=step;
 
-    }
+//     }
 
-    timerId= setTimeout(moveImg,2-pos);
-}
+//     timerId= setTimeout(moveImg,2-pos);
+// }
