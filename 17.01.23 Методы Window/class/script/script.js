@@ -59,10 +59,21 @@
 // </p>
 //`
 
-box1.innerHTML=`<p> href: ${location.href}</p>
-<p> href: ${location.host}</p>
-<p> href: ${location.hash}</p>
-<p> href: ${location.pathname}</p>
-<p> href: ${location.search}</p>
+// box1.innerHTML=`<p> href: ${location.href}</p>
+// <p> href: ${location.host}</p>
+// <p> href: ${location.hash}</p>
+// <p> href: ${location.pathname}</p>
+// <p> href: ${location.search}</p>
+// `
 
-`
+
+// Объект событий
+
+function eve(e){
+    let s = ""
+    s= `Тип события ${e.type}
+    Источник события ${e.srcElement.tagName}
+    Координаты ${e.clientX} x ${e.clientY}`;
+
+    alert(s);
+}
