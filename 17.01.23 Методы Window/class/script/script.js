@@ -69,11 +69,59 @@
 
 // Объект событий
 
-function eve(e){
-    let s = ""
-    s= `Тип события ${e.type}
-    Источник события ${e.srcElement.tagName}
-    Координаты ${e.clientX} x ${e.clientY}`;
+// function eve(e){
+//     let s = ""
+//     s= `Тип события ${e.type}
+//     Источник события ${e.srcElement.tagName}
+//     Координаты ${e.clientX} x ${e.clientY}`;
 
-    alert(s);
-}
+//     alert(s);
+// }
+
+
+// Методы создания узлов
+// document.createElement - создает HTML элемент
+// append() / appendChild() - добовляют эл-т в dom
+// remove() / removeChild() - удаляет эл-т 
+
+// работа с атрибутами
+// setAtribute() - установить атрибут
+// getAtribute () / hasAtribute() - получить / проверить наличие атрибута
+// removeAtribute() - удалиение атрибута
+
+//пример 1
+
+let newDivEl = document.createElement("div");
+newDivEl.innerHTML = "Hi";
+newDivEl.setAttribute("id","box")
+document.body.append(newDivEl);
+
+//пример 2
+
+let mySelector = document.createElement("section");
+mySelector.setAttribute("id","box1");
+mySelector.style = `
+    width:550px;
+    height:400px;
+    border:1px solid #000;
+    margin: 0 auto;
+`
+// mySelector.innerHTML = `<img src = "images/img1b.jpg"/>`;
+
+let myImg = document.createElement('img');
+myImg.setAttribute("src","images/img1b.jpg")
+
+mySelector.append(myImg);
+
+
+document.body.append(mySelector);
+
+
+// myImg.remove();
+// newDivEl.remove();
+// mySelector.remove();
+
+
+setTimeout(()=> myImg.remove(),2000);
+setTimeout(()=>newDivEl.remove(),4000);
+setTimeout(()=>mySelector.remove(),6000);
