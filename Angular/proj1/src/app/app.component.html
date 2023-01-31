@@ -3,22 +3,31 @@
   <h1>{{ title }}</h1>
 </header>
 <main>
-
-  <section class="todo-list">
+  <!-- *ngIf- структурная деректива для перебора массива в app.component.ts  -->
+  <section class="todo-list" *ngIf="todos.length">
     <!-- *ngFor - структурная деректива, изменяет DOM -->
-    <div class="todo-item" *ngFor="let todo of todos">
+    <!-- [ngClass] - атрибутная деректива изменяет внешний вид, или поведение -->
+    <div class="todo-item" [ngClass]="{'completed':todo.completed}" *ngFor="let todo of todos">
+
       <button class="todo-checkbox icon">
+      
         <span class="material-icons">
           check_box_outline_blank
         </span>
+      
       </button>
-      <span class="title">{{todo}}</span>
+      <span class="title">{{todo.title}}</span>
+      
       <div class="actions">
+      
         <button class="todo-delete icon">
+      
           <span class="material-icons">
             delete
           </span>
+      
         </button>
+      
       </div>
     </div>
 

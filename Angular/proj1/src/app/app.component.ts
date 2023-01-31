@@ -1,10 +1,25 @@
 import { Component } from '@angular/core';
 
 const todos:any[]=[
-  // "Новая задача 1",
-  // "Новая задача 2",
-  // "Новая задача 3",
+  {
+    title:"Новая задача 1",
+    completed: true,
+    icon:"check_box"
+
+  },
+  {
+    title:"Новая задача 2",
+    completed: false,
+    icon:"check_box"
+  },
+  {
+    title:"Новая задача 3",
+    completed: false,
+    icon:"check_box"
+  },
+
 ]
+
 
 @Component({
   selector: 'app',
