@@ -9,25 +9,33 @@
     <!-- [ngClass] - атрибутная деректива изменяет внешний вид, или поведение -->
     <div class="todo-item" [ngClass]="{'completed':todo.completed}" *ngFor="let todo of todos">
 
-      <button class="todo-checkbox icon">
-      
+      <button class="todo-checkbox icon" (click)="togle(todo)">
+
         <span class="material-icons">
-          check_box_outline_blank
+          {{todo.completed?"check_box":"check_box_outline_blank"}}
         </span>
-      
+
+
+        <!-- <span *ngIf="todo.completed" class="material-icons">
+          check_box
+        </span>
+        <span *ngIf="!todo.completed" class="material-icons">
+          check_box_outline_blank
+        </span> -->
+
       </button>
       <span class="title">{{todo.title}}</span>
-      
+
       <div class="actions">
-      
+
         <button class="todo-delete icon">
-      
+
           <span class="material-icons">
             delete
           </span>
-      
+
         </button>
-      
+
       </div>
     </div>
 

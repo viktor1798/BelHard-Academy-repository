@@ -4,18 +4,14 @@ const todos:any[]=[
   {
     title:"Новая задача 1",
     completed: true,
-    icon:"check_box"
-
   },
   {
     title:"Новая задача 2",
     completed: false,
-    icon:"check_box"
   },
   {
     title:"Новая задача 3",
     completed: false,
-    icon:"check_box"
   },
 
 ]
@@ -30,4 +26,7 @@ const todos:any[]=[
 export class AppComponent {
   title = 'Angular 2';
   todos = todos;  
+  togle(todo:any){
+    todo.completed = !todo.completed
+  }
 }
