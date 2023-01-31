@@ -36,4 +36,3 @@ export class AppComponent {
     this.todos.splice(index,1);
   }
 }
-
