@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 const todos:any[]=[
   {
     title:"Новая задача 1",
-    completed: true,
+    completed: false,
   },
   {
     title:"Новая задача 2",
@@ -29,4 +29,11 @@ export class AppComponent {
   togle(todo:any){
     todo.completed = !todo.completed
   }
+  delete(todo:any){
+    let index = this.todos.indexOf(todo);    
+    if(index > -1)
+    
+    this.todos.splice(index,1);
+  }
 }
+
